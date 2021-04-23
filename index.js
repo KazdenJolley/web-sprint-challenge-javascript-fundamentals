@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+// nestedFunction can access the variable internal because of closure. Because nestedFunction is a child of myFunction, where internal was declared, it can access internal.
 
 
 
