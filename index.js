@@ -77,7 +77,7 @@ const zooAnimals = [
   function lowerCaseNames(array){
     return array.map((animal) => {
       return `${animal.animal_name.toLowerCase()}`;
-    })
+    });
   }
   
   
@@ -86,8 +86,10 @@ const zooAnimals = [
   Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowPopulationAnimals(array){
+    return array.filter((animal) => {
+      return animal.population < 5;
+    });
   }
   
 
@@ -97,8 +99,10 @@ const zooAnimals = [
   Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count.
   */
 
-  function USApop(/*Your Code Here*/){
-    /*Your Code Here*/
+  function USApop(array){
+    return array.reduce((totalPopulation, animal) => {
+      return totalPopulation + animal.population;
+    }, 0);
   }
   
   
